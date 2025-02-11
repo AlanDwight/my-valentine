@@ -1,0 +1,117 @@
+:root {
+    --main-color: #ff5678;
+    --secondary-color: #ff304f;
+    --heart-size: 20px;
+}
+*{
+    margin: 0px;
+    border: 0px;
+    background-color: aliceblue;
+    font-family: "Pacifico", serif;
+    font-size: 1.5rem;
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: scroll;
+
+}
+
+.no-btn{
+    padding: 3rem;
+    background-color: #AD91E4;
+    cursor: pointer;
+    border: none;
+    border-radius: 4rem;
+    color: whitesmoke;
+    margin: 0.5rem;
+}
+
+.yes-btn{ 
+    padding: 3rem;
+    background-color: #B31B38;
+    cursor: pointer;
+    border: none;
+    border-radius: 4rem;
+    color: white;
+
+}
+
+.message{ 
+    color: #7C4040;
+}
+
+.sub-container{ 
+    /* background-color: yellow; */
+    margin-top: 1.5rem;
+}
+
+.yes-reply{ 
+    color: #7C4040;
+
+}
+
+/* heart confetti */
+
+.heart {
+    position: absolute;
+    width: var(--heart-size);
+    height: var(--heart-size);
+    background: red;
+    transform: rotate(45deg);
+    animation: fall 2.5s linear infinite;
+  }
+  .heart:before,
+  .heart:after {
+    content: "";
+    position: absolute;
+    width: var(--heart-size);
+    height: var(--heart-size);
+  
+    background: red;
+    border-radius: 50%;
+  }
+  .heart:before {
+    top: calc(-1 * var(--heart-size) / 2);
+    left: 0;
+  }
+  .heart:after {
+    top: 0;
+    left: calc(-1 * var(--heart-size) / 2);
+  }
+  @keyframes fall {
+    0% {
+      top: -50px;
+      opacity: 1;
+    }
+    100% {
+      top: 100vh;
+      opacity: 0;
+      transform: rotate(90deg);
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .yes-btn{
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    .no-btn{
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .container{
+        display: flex;
+        text-align: center;
+    }
+    .yes-reply{
+        font-size: 1.5rem;
+    }
+  }
