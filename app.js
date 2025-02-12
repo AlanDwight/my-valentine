@@ -5,12 +5,18 @@ const clickFunct = () => {
     count++;
     if(count == 1){ 
         document.querySelector('.message').innerHTML = "Why, I know you love me";
+        document.querySelector('.no-btn').innerHTML = "Nope!";
     }else if(count== 2){ 
         document.querySelector('.message').innerHTML = "Please baby, say yes";
+        document.querySelector('.no-btn').innerHTML = "Nah!!";
     }else if(count == 3){ 
         document.querySelector('.message').innerHTML = "Pretty pleaseeeeeeeeeeeeeee";
-    }else if(count >= 4){ 
+        document.querySelector('.no-btn').innerHTML = "Ewww!!";
+    }else if(count == 4){ 
         document.querySelector('.yes-btn').innerHTML = "Say, Yes please, I'm begging you";
+        document.querySelector('.no-btn').innerHTML = "Hmmmm NO!";
+    }else if(count >= 5){ 
+        document.querySelector('.yes-btn').innerHTML = "Are you seriously gonna say 'No' forever?!! Please!!!";
     };
     console.log(paddingValue);
     document.querySelector('.yes-btn').style.padding = `${paddingValue}rem`;

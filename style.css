@@ -19,6 +19,7 @@
     align-items: center;
     gap: 10px;
     overflow: scroll;
+    text-align: center;
 
 }
 
@@ -66,7 +67,6 @@
 
 .yes-reply{ 
     color: #7C4040;
-
 }
 
 /* heart confetti */
