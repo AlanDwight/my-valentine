@@ -9,7 +9,7 @@
     background-color: aliceblue;
     font-family: "Pacifico", serif;
     font-size: 1.5rem;
-  
+    
 }
 .container{
     display: flex;
@@ -30,6 +30,10 @@
     border-radius: 4rem;
     color: whitesmoke;
     margin: 0.5rem;
+    box-shadow: 1px 2px 15px black;
+    transition: all .075s ease-in-out;
+
+
 }
 
 .yes-btn{ 
@@ -39,8 +43,17 @@
     border: none;
     border-radius: 4rem;
     color: white;
-
+    box-shadow: 1px 2px 15px black;
+    transition: all .075s ease-in-out;
 }
+
+.yes-btn:active{ 
+  transform: translateY(10px);
+}
+.no-btn:active{ 
+  transform: translateY(10px);
+}
+
 
 .message{ 
     color: #7C4040;
@@ -114,4 +127,47 @@
     .yes-reply{
         font-size: 1.5rem;
     }
+  }
+
+  @media screen and (max-width: 768px){
+      .yes-btn{
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    .no-btn{
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .container{
+        display: flex;
+        text-align: center;
+    }
+    .yes-reply{
+        font-size: 1.5rem;
+    }
+  }
+
+
+  .bubuAndDudu{
+    width: 15rem;
+    border-radius: 5rem;
+  }
+  body{
+    position: relative;
+  }
+
+  .blob-1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+  }
+
+  .blob-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10rem;
   }
