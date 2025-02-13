@@ -29,7 +29,7 @@ console.log('hello');
 
 const yesFunct = ()=>{
     // document.querySelector('.yes-btn').style.padding = `3rem`;
-    document.querySelector('.container').innerHTML = `<p class='yes-reply'>Yayyyyyyyy!! Koko love you sooooo sooo muchhhh! Shin Shin!</p>`;
+    document.querySelector('.container').innerHTML = `<p class='yes-reply'>Yayyyyyyyy!! Koko love you sooooo sooo muchhhh! Shin Shin!</p><p class="yes-reply">❤️Happy Valentine❤️</p>`;
     const ele = document.createElement('div');
     ele.className = 'yes-holder';
     document.querySelector('.container').appendChild(ele);
